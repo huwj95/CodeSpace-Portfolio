@@ -4,7 +4,7 @@ a{
 }
 
 a:hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: inherit;
 }
 
@@ -55,11 +55,18 @@ body{
     align-content: center;
 }
 
-.box{
-    background-color: rgba(100, 100, 100, 0.3);
+.box {
+    background-color: rgba(100, 100, 100, 1);
+    background-blend-mode: overlay;
     min-height: 30vh;
     border-radius: 10px;
     text-align: center;
+    transition: 0.5s;
+    margin: 30px;
+    width: auto;
+    align-content: center;
+    background-size: cover;
+    background-position: center;
 }
 
 p{
@@ -67,12 +74,9 @@ p{
     color: lightgray;
 }
 
-.box-img{
-    height: 25vh;
-    width: 90%;
-}
 
 .box:hover{
-    background-color: rgba(100, 100, 100, 0.5);
+    background-blend-mode: multiply;
     cursor: pointer;
+
 }
