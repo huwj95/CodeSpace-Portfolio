@@ -57,12 +57,12 @@ body{
 
 .box {
     background-color: rgba(100, 100, 100, 1);
-    background-blend-mode: overlay;
     min-height: 30vh;
-    border-radius: 10px;
+    margin: 0;
     text-align: center;
     transition: 0.5s;
     margin: 30px;
+    border-radius: 10px;
     width: auto;
     align-content: center;
     background-size: cover;
@@ -76,7 +76,35 @@ p{
 
 
 .box:hover{
-    background-blend-mode: multiply;
     cursor: pointer;
+    transform: scale(1.05);
+}
 
+.box.nohover{
+    min-height: 19rem;
+    align-content: start;
+}
+
+.box.nohover:hover{
+    cursor: inherit;
+    transform: scale(1.0);
+}
+
+.box .row{
+    max-width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.box .col-md-4{
+    text-align: right;
+}
+
+.row button{
+    width: 50%;
+    margin-left: 25%;
+}
+
+.button{
+    align-items: center;
+    background-color: blue;
 }
